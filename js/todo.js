@@ -50,7 +50,7 @@ function handleSubmit(e) {
     id: new Date().getMilliseconds()
   }
   drawTodo(item);
-  todoInput.innerText = "";
+  todoInput.value = "";
 }
 
 function loadTodos(){
