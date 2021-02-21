@@ -6,19 +6,30 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <h1>Hello world</h1>
-  <form class="user-info-form">
-   <input type="text">
-  </form>
+  <div class="container">
+    <div class="user-info-box box">
+      <form class="user-info-form">
+       <input type="text" placeholder="TYPE YOUR NAME">
+      </form>
+      <h1 class="name-container"></h1>
+    </div>
 
-  <h1 class="name-container"></h1>
-  <h1 class="clock-container"></h1>
-  <h1 class="weather-container"></h1>
-
-  <h3 class="todo-container"></h3>
-  <form class="todo-form">
-    <input type="text" />
-  </form>
+    <div class="todo-box box">
+      <h2> TODOS </h2>
+      <h3 class="todo-container"></h3>
+    </div>
+    <div class="clock-box box">
+      <h4 class="clock-container"></h1>
+    </div>
+    <div class="weather-box box">
+      <h4 class="weather-container"></h1>
+    </div>
+    <div class="todo-box box">
+      <form class="todo-form">
+        <input type="text" placeholder="WRITE YOUR GOAL">
+      </form>
+    </div>
+  </div>
   <script src="js/userInfo.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/image.js"></script>
