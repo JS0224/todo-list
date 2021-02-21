@@ -10,7 +10,7 @@ function updateClock(){
 
   clockConatiner.innerHTML =
     `year : ${year},
-    month : ${month},
+    month : ${month + 1},
     date : ${date},
     day : ${dayArray[day]},
     hour: ${fullDate.getHours()},
