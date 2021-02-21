@@ -8,11 +8,11 @@ function printName(name) {
   nameContainer.innerHTML = `hello : ${name}`;
 }
 
-function saveName(name){
+function saveName(name) {
   localStorage.setItem(NAME_LS,name);
 }
 
-function handleSubmit(event){
+function handleSubmit(event) {
   event.preventDefault();
   const value = userInfoInput.value;
   printName(value);
@@ -23,7 +23,7 @@ function askName() {
   userInfoForm.addEventListener("submit", handleSubmit);
 }
 
-function loadName(){
+function loadName() {
   const name = localStorage.getItem(NAME_LS);
   if (name === null) {
     askName();
@@ -33,9 +33,8 @@ function loadName(){
   }
 }
 
-function init(){
+function init() {
   loadName();
-
 }
 
 init();
