@@ -1,11 +1,12 @@
 const userInfoForm = document.querySelector(".user-info-form"),
       userInfoInput = userInfoForm.querySelector("input"),
       NAME_LS = "NAME",
-      nameContainer = document.querySelector(".name-container");
+      nameContainer = document.querySelector(".name-container"),
+      HIDE_CL = "hide";
 
 
 function printName(name) {
-  nameContainer.innerHTML = `hello : ${name}`;
+  nameContainer.innerHTML = `HELLO! : ${name}`;
 }
 
 function saveName(name) {
@@ -17,6 +18,7 @@ function handleSubmit(event) {
   const value = userInfoInput.value;
   printName(value);
   saveName(value);
+  userInfoInput.classList.add(HIDE_CL);
 }
 
 function askName() {
@@ -30,6 +32,7 @@ function loadName() {
   }
   else {
     printName(name);
+    userInfoInput.classList.add(HIDE_CL);
   }
 }
 
